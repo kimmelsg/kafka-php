@@ -176,7 +176,7 @@ abstract class CommonSocket
                         'verify_peer' => $this->config->getSslVerifyPeer(),
                         'passphrase'  => $this->config->getSslPassphrase(),
                         'cafile'      => $this->config->getSslCafile(),
-                        'peer_name'   => $this->config->getSslPeerName(),
+                        'peer_name'   => $this->host,
                     ],
                 ]
             );
@@ -187,7 +187,7 @@ abstract class CommonSocket
                 'ssl' => [
                     'verify_peer' => $this->config->getSslVerifyPeer(),
                     'cafile'      => $this->config->getSslCafile(),
-                    'peer_name'   => $this->config->getSslPeerName(),
+                    'peer_name'   => $this->host,
                 ],
             ]
         );
